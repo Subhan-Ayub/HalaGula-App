@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
+import 'package:halagula_app/src/utils/routes/appPages.dart';
 
 class MyApp extends StatelessWidget {
 
@@ -13,9 +14,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: 'Popins',
       ),
-      home: const Text('data'),
-      // initialRoute: AppPages.INITIAL,
-      // getPages: AppPages.routes,
+      // home: const Text('data'),
+      initialRoute: AppPages.INITIAL,
+      getPages: AppPages.routes,
       // onUnknownRoute: (RouteSettings rs) => MaterialPageRoute(
       //   builder: (context) {
       //     return ErrorView(
