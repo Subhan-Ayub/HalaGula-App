@@ -1,4 +1,4 @@
 abstract class Routes {
-  // home
-  static const homeRoute = '/';
+  static const splashscreen = '/splashscreen';
+  static const wellcomescreen = '/wellcomescreen';
 }
