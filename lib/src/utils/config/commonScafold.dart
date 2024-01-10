@@ -11,7 +11,7 @@ class CommonScafold extends StatelessWidget {
   var check = false;
   RxBool mobileservicetap = false.obs;
 
-  CommonScafold({super.key, required this.body, this.appbaar = true});
+  CommonScafold({super.key, required this.body, this.appbaar = false});
 
   Widget appbar(context) => Container(
         width: 650,
@@ -24,7 +24,7 @@ class CommonScafold extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor:const Color(0xff292929),
-      appBar: AppBar(
+      appBar:appbaar? AppBar(
         bottom: PreferredSize(
           preferredSize:
               const Size.fromHeight(10), // Adjust the height of the border
@@ -83,7 +83,7 @@ class CommonScafold extends StatelessWidget {
           ),
         ),
         backgroundColor: const Color(0xffF33535),
-      ),
+      ):null,
       body: body,
 
       drawer: Drawer(
