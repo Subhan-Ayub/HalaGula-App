@@ -136,6 +136,7 @@ class SignUpScreen extends StatelessWidget {
             ),
 
             FillButton(
+              
               color: Colors.red,
               child: Text(
                 'SIGN UP',
@@ -152,9 +153,14 @@ class SignUpScreen extends StatelessWidget {
                   'Already have account?',
                   style: UIDataDecoration.subHeadingStyle,
                 ),
-                Text(
-                  'SIGN IN',
-                  style: UIDataDecoration.subHeadingStyle,
+                InkWell(
+                  onTap: () {
+                    Get.toNamed(Routes.home);
+                  },
+                  child: Text(
+                    'SIGN IN',
+                    style: UIDataDecoration.subHeadingStyle,
+                  ),
                 )
               ],
             ),

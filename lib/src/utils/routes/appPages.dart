@@ -1,6 +1,7 @@
 import 'package:get/route_manager.dart';
 import 'package:halagula_app/src/bindings/signupBinding.dart';
 import 'package:halagula_app/src/bindings/wellcomeBinding.dart';
+import 'package:halagula_app/src/ui/view/home.dart';
 import 'package:halagula_app/src/ui/view/signupScreen.dart';
 import 'package:halagula_app/src/ui/view/splashScreen.dart';
 import 'package:halagula_app/src/ui/view/wellcomeScreen.dart';
@@ -23,5 +24,13 @@ class AppPages {
         binding: SignUpBinding(),
         page: () => SignUpScreen(),
         transition: Transition.noTransition),
+
+          GetPage(
+        name: Routes.home,
+        binding: WellcomeBinding(),
+        page: () =>  Home(),
+        transition: Transition.noTransition
+        ),
+
   ];
 }
