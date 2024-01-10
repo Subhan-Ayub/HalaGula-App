@@ -150,7 +150,7 @@ class Home extends StatelessWidget {
               Row(
                 children: [
                   Container(
-                    height: 210,
+                    height: 230,
                     width: Get.width / 1.1,
                     child: ListView.builder(
                         shrinkWrap: true,
@@ -240,7 +240,7 @@ class Home extends StatelessWidget {
               Row(
                 children: [
                   Container(
-                    height: 210,
+                    height: 230,
                     width: Get.width / 1.1,
                     child: ListView.builder(
                         shrinkWrap: true,
